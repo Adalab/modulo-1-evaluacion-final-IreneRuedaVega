@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ANONYMOUS PROXY</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -16,7 +16,7 @@
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__menu">
         <a
           href="https://adalab.es/"
@@ -31,7 +31,10 @@
           />
         </a>
       </div>
-      <div class="hero">
+    </header>
+
+    <main>
+      <section class="hero">
         <div>
           <h1>
             <span>Anonymous</span>
@@ -41,20 +44,17 @@
         </div>
 
         <div class="scroll">
-          <a href="#" title="Ir a la seccion Reasons to purchase">
+          <a href="#reasons-to-purchase" title="Ir a la seccion Reasons to purchase">
             <img
               src="./assets/images/ico-scroll-down.svg"
               alt="Icono para llegar a la seccion de la página Reasons to purchase"
             />
           </a>
         </div>
-      </div>
+      </section>
 
-    </header>
-
-    <main>
       <section class="section-tips">
-        <article class="article">
+        <article class="article-tips">
           <div class="tips">
             <span class="tips-insomnia">Insomnia tips</span>
             <h2 class="tips-title">Looking through a window</h2>
@@ -75,7 +75,7 @@
       </section>
 
       <section class="section-reasons">
-        <div class="section-reasons-box">
+        <article class="article-reasons" id="reasons-to-purchase">
           <h2 class="section-reasons-title">3 Reasons to purchase</h2>
           <div class="section-reasons-1">
             <h3>Ut sed metus</h3>
@@ -97,14 +97,14 @@
               >More reasons</a
             >
           </div>
-        </div>
+        </article>
       </section>
 
     </main>
 
     <footer class="footer">
       <div class="footer-arrow">
-        <a href="#" title="Volver al inicio">
+        <a href="#home" title="Volver al inicio">
           <img
             src="./assets/images/ico-arrow.svg"
             alt="Icono para volver al inicio"

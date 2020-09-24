@@ -16,5 +16,14 @@
 }
 
 .article-tips__button-go {
-  background-color: green;
+  border: 2px solid $color-tertiary;
+  color: $color-tertiary;
+  text-decoration: none;
+  border-radius: 22.5px;
+  height: 45px;
+  width: 76px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

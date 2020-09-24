@@ -1,26 +1,27 @@
 /*hero*/
 
 .hero {
-  width: 100vw;
-  height: 568px;
+  height: 100vh;
   background-image: url("../images/cover.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
   &__title {
     color: $color-primary;
     font-family: $font-title;
     text-align: center;
-    margin-top: 284px;
     &--principal {
       text-transform: uppercase;
       font-size: 42px;
       line-height: 55px;
+      .span {
+        display: block;
+      }
     }
     &--paragraph {
       font-family: $font-main;
@@ -46,18 +47,18 @@
   .hero {
     height: 100vh;
     &__title {
-      margin: 384px 39px 5px 39px;
+      margin: 0px 39px 5px 39px;
       &--principal {
         font-size: 80px;
         line-height: 106px;
-        .span {
-          display: block;
-        }
       }
       &--paragraph {
         font-size: 24px;
         margin-bottom: 30px;
       }
+    }
+    .scroll {
+      margin-bottom: 45px;
     }
   }
 }
@@ -66,7 +67,7 @@
   .hero {
     height: 100vh;
     &__title {
-      margin: 384px 275px 0 275px;
+      margin: 0px 275px 0 275px;
       &--principal {
         font-size: 100px;
         line-height: 132px;

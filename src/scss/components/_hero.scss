@@ -1,0 +1,87 @@
+/*hero*/
+
+.hero {
+  width: 100vw;
+  height: 568px;
+  background-image: url("../images/cover.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: $color-primary;
+    font-family: $font-title;
+    text-align: center;
+    margin-top: 284px;
+
+    &--principal {
+      text-transform: uppercase;
+      font-size: 42px;
+      line-height: 55px;
+    }
+    &--paragraph {
+      font-family: $font-main;
+      font-size: 16px;
+      font-weight: normal;
+      margin-bottom: 45px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.scroll {
+  background-color: $color-primary;
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 53px;
+}
+
+@media all and (min-width: 768px) {
+  .hero {
+    height: 768px;
+  }
+  .hero__title {
+    margin: 384px 39px 5px 39px;
+  }
+
+  .hero__title--principal {
+    font-size: 80px;
+    line-height: 106px;
+  }
+
+  .hero__title--paragraph {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .hero {
+    height: 768px;
+  }
+  .hero__title {
+    margin: 384px 275px 0 275px;
+  }
+
+  .hero__title--principal {
+    font-size: 100px;
+    line-height: 132px;
+  }
+
+  .hero__title--paragraph {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .scroll {
+    margin-bottom: 13px;
+  }
+}

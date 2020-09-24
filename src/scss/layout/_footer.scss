@@ -1,59 +1,93 @@
 .footer {
   background-color: $color-secundary;
-  width: 100vw;
-  color: $color-primary;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
   position: relative;
+  height: 465px;
+  width: 100%;
 }
 
 .footer__arrow {
   position: absolute;
   top: -25px;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-primary;
-  border: 1px solid $color-primary;
-  border-radius: 22.5px;
-  height: 45px;
   width: 45px;
+  height: 45px;
+  background-color: $color-primary;
+  border-radius: 22.5px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  box-shadow: 0 2px 4px 0 $color-dark;
+  justify-content: center;
 }
 
-.menu {
-  background-color: red;
-  margin: 60px 123px 0 124px;
-}
-
-.social {
-  background-color: green;
-  margin: 30px 86px 0px 87px;
-}
-
-.menu__list--1,
-.menu__social--1 {
+.footer__nav {
   color: $color-primary;
+}
+
+.link {
+  font-family: $font-main;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
-  line-height: 30px;
-  font-family: $font-main;
+  color: $color-primary;
 }
 
-.footer__copy {
+.menu-articles {
+  background-color: red;
+}
+
+.menu-social {
   background-color: yellow;
-  font-family: $font-main;
-  font-size: 14px;
-  line-height: 30px;
-  margin: 30px 0 45px 0;
 }
 
-.heart1 {
+.copy {
+  background-color: green;
+}
+
+/* .heart1 {
   color: $color-tertiary;
+}
+ */
+
+@media all and (min-width: 768px) {
+  .footer__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+  .menu-articles {
+    background-color: red;
+    order: 0;
+  }
+
+  .menu-social {
+    background-color: yellow;
+    order: 1;
+  }
+
+  .copy {
+    background-color: green;
+    order: -1;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .menu-articles {
+    background-color: red;
+    order: 0;
+  }
+
+  .menu-social {
+    background-color: yellow;
+    order: 1;
+  }
+
+  .copy {
+    background-color: green;
+    order: -1;
+  }
 }

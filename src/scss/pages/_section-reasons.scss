@@ -1,0 +1,65 @@
+.article-reasons {
+  background-color: $color-light;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 30px 93px 93px 93px 45px;
+}
+
+.article-reasons__title {
+  color: $color-dark;
+  font-family: $font-title;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.article-reasons__1 {
+  background-color: lightblue;
+}
+
+.article-reasons__2 {
+  background-color: greenyellow;
+}
+
+.article-reasons__3 {
+  background-color: yellow;
+}
+
+.article-reasons__1--title,
+.article-reasons__2--title,
+.article-reasons__3--title {
+  color: $color-dark;
+  font-family: $font-title;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.article-reasons__1--text,
+.article-reasons__2--text,
+.article-reasons__3--text {
+  color: $color-dark;
+  font-family: $font-main;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.article-reasons__button {
+  height: 45px;
+  width: 184px;
+  border: 1px solid $color-tertiary;
+  border-radius: 22.5px;
+  background-color: $color-tertiary;
+  margin: 0 68px 60px 68px;
+  display: flex;
+  justify-content: center;
+  align-items: centers;
+}
+
+.more-button {
+  text-decoration: none;
+  color: $color-light;
+  font-size: 20px;
+  font-weight: medium;
+  font-family: $font-main;
+  line-height: 45px;
+}

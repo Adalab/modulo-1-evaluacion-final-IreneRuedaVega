@@ -1,9 +1,20 @@
-/* .page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
-} */
-
 .header {
-  background-color: blue;
+  width: 100%;
+  max-width: 1200px;
+
+  &__menu {
+    background-color: $color-midtone;
+    height: 44px;
+    width: 44px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--icon {
+      width: 100%;
+    }
+  }
 }

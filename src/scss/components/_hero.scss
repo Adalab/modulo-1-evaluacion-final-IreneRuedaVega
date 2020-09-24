@@ -2,7 +2,7 @@
 
 .hero {
   width: 100%;
-  height: 568px;
+  height: 100vh;
   background-image: url("../images/cover.jpg");
   background-position: center;
   background-size: cover;
@@ -44,7 +44,7 @@
 
 @media all and (min-width: 768px) {
   .hero {
-    height: 768px;
+    height: 100vh;
     &__title {
       margin: 384px 39px 5px 39px;
       &--principal {
@@ -64,7 +64,7 @@
 
 @media all and (min-width: 1200px) {
   .hero {
-    height: 768px;
+    height: 100vh;
     &__title {
       margin: 384px 275px 0 275px;
       &--principal {

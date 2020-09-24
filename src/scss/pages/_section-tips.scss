@@ -1,0 +1,20 @@
+.article-tips {
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.article-tips__container--insomnia {
+  color: $color-light;
+  font-family: $font-main;
+}
+
+.span {
+  text-transform: capitalize;
+}
+
+.article-tips__button-go {
+  background-color: green;
+}

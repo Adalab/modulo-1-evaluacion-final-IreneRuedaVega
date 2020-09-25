@@ -46,6 +46,12 @@
   justify-content: center;
   align-items: center;
   margin: 0 229px 45px 15px;
+  transition: background-color ease 1s, border ease 0.5s;
+}
+
+.article-tips__button-go:hover {
+  background-color: $color-light-midtone;
+  border: 2px solid $color-secundary;
 }
 
 .go-button {

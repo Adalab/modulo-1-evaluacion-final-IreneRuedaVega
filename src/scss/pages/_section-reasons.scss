@@ -1,4 +1,5 @@
 .article-reasons {
+  height: 324;
   background-color: $color-light;
   text-align: center;
   display: grid;
@@ -18,17 +19,14 @@
 }
 
 .article-reasons__1 {
-  background-color: lightblue;
   grid-row: 2/3;
 }
 
 .article-reasons__2 {
-  background-color: greenyellow;
   grid-row: 3/4;
 }
 
 .article-reasons__3 {
-  background-color: yellow;
   grid-row: 4/5;
 }
 
@@ -74,6 +72,7 @@
 
 @media all and (min-width: 768px) {
   .article-reasons {
+    height: 397;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 45px;
     grid-template-rows: 45px 112px;
@@ -88,17 +87,14 @@
   }
 
   .article-reasons__1 {
-    background-color: lightblue;
     grid-area: article1;
   }
 
   .article-reasons__2 {
-    background-color: greenyellow;
     grid-area: article2;
   }
 
   .article-reasons__3 {
-    background-color: yellow;
     grid-area: article3;
   }
 
@@ -128,5 +124,57 @@
     line-height: 45px;
     height: 45px;
     width: 210px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .article-reasons {
+    height: 427px;
+    padding-right: 85px;
+    padding-left: 81.2px;
+    padding-top: 60px;
+  }
+  .article-reasons__title {
+    font-size: 32px;
+    line-height: 45px;
+    grid-area: title;
+  }
+
+  .article-reasons__1 {
+    grid-area: article1;
+  }
+
+  .article-reasons__2 {
+    grid-area: article2;
+  }
+
+  .article-reasons__3 {
+    grid-area: article3;
+  }
+
+  .article-reasons__1--title,
+  .article-reasons__2--title,
+  .article-reasons__3--title {
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: bold;
+    padding-bottom: 14px;
+  }
+
+  .article-reasons__1--text,
+  .article-reasons__2--text,
+  .article-reasons__3--text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .article-reasons__button {
+    grid-area: button;
+  }
+
+  .more-button {
+    font-size: 20px;
+    line-height: 45px;
+    height: 45px;
+    width: 255px;
   }
 }

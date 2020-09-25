@@ -1,8 +1,12 @@
 .article-reasons {
   background-color: $color-light;
-  width: 100%;
+  text-align: center;
   display: grid;
+  gap: 45px;
+  grid-template-columns: 1fr;
   grid-template-rows: 30px 93px 93px 93px 45px;
+  padding-top: 30px;
+  padding-bottom: 65.5px; /*27.5 (la mitad del botón) + 38 (margin)*/
 }
 
 .article-reasons__title {
@@ -10,18 +14,22 @@
   font-family: $font-title;
   font-size: 24px;
   line-height: 30px;
+  grid-row: 1/2;
 }
 
 .article-reasons__1 {
   background-color: lightblue;
+  grid-row: 2/3;
 }
 
 .article-reasons__2 {
   background-color: greenyellow;
+  grid-row: 3/4;
 }
 
 .article-reasons__3 {
   background-color: yellow;
+  grid-row: 4/5;
 }
 
 .article-reasons__1--title,
@@ -32,6 +40,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  margin: 0 68px 0 68px;
 }
 
 .article-reasons__1--text,
@@ -41,18 +50,11 @@
   font-family: $font-main;
   font-size: 18px;
   line-height: 30px;
+  margin: 0 55px 0 55px;
 }
 
 .article-reasons__button {
-  height: 45px;
-  width: 184px;
-  border: 1px solid $color-tertiary;
-  border-radius: 22.5px;
-  background-color: $color-tertiary;
-  margin: 0 68px 60px 68px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-row: 5/6;
 }
 
 .more-button {
@@ -62,4 +64,69 @@
   font-weight: medium;
   font-family: $font-main;
   line-height: 45px;
+  height: 45px;
+  width: 184px;
+  border: 1px solid $color-tertiary;
+  border-radius: 22.5px;
+  background-color: $color-tertiary;
+  display: inline-block;
+}
+
+@media all and (min-width: 768px) {
+  .article-reasons {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 45px;
+    grid-template-rows: 45px 112px;
+    grid-template-areas: "title title title" "article1 article2 article3" "button button button";
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .article-reasons__title {
+    font-size: 26px;
+    line-height: 45px;
+    grid-area: title;
+  }
+
+  .article-reasons__1 {
+    background-color: lightblue;
+    grid-area: article1;
+  }
+
+  .article-reasons__2 {
+    background-color: greenyellow;
+    grid-area: article2;
+  }
+
+  .article-reasons__3 {
+    background-color: yellow;
+    grid-area: article3;
+  }
+
+  .article-reasons__1--title,
+  .article-reasons__2--title,
+  .article-reasons__3--title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 14px;
+  }
+
+  .article-reasons__1--text,
+  .article-reasons__2--text,
+  .article-reasons__3--text {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+  .article-reasons__button {
+    grid-area: button;
+  }
+
+  .more-button {
+    font-size: 20px;
+    line-height: 45px;
+    height: 45px;
+    width: 210px;
+  }
 }

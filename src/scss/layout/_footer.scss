@@ -8,86 +8,88 @@
   position: relative;
   height: 465px;
   width: 100%;
+  &__arrow {
+    position: absolute;
+    top: -25px;
+    width: 45px;
+    height: 45px;
+    background-color: $color-primary;
+    border-radius: 22.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__nav {
+    color: $color-primary;
+    &--menu-articles {
+      padding: 37px 124px 30px 124px;
+    }
+    &--menu-social {
+      padding: 0px 86px 30px 86px;
+    }
+    &--copy {
+      padding: 30px 15px 45px 15px;
+    }
+    .link {
+      font-family: $font-main;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-primary;
+    }
+    .heart1 {
+      color: $color-tertiary;
+    }
+  }
 }
-
-.footer__arrow {
-  position: absolute;
-  top: -25px;
-  width: 45px;
-  height: 45px;
-  background-color: $color-primary;
-  border-radius: 22.5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer__nav {
-  color: $color-primary;
-}
-
-.link {
-  font-family: $font-main;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color-primary;
-}
-
-.menu-articles {
-  background-color: red;
-}
-
-.menu-social {
-  background-color: yellow;
-}
-
-.copy {
-  background-color: green;
-}
-
-/* .heart1 {
-  color: $color-tertiary;
-}
- */
 
 @media all and (min-width: 768px) {
-  .footer__nav {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: left;
-  }
-  .menu-articles {
-    background-color: red;
-    order: 0;
-  }
+  .footer {
+    height: 240px;
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      &--menu-articles {
+        width: 210px;
+        padding: 0;
+        order: 0;
+      }
+      &--menu-social {
+        width: 210px;
+        padding: 0;
+        order: 1;
+      }
 
-  .menu-social {
-    background-color: yellow;
-    order: 1;
-  }
-
-  .copy {
-    background-color: green;
-    order: -1;
+      &--copy {
+        width: 210px;
+        padding-right: 30px;
+        order: -1;
+      }
+    }
   }
 }
 
 @media all and (min-width: 1200px) {
-  .menu-articles {
-    background-color: red;
-    order: 0;
-  }
+  .footer-nav {
+    &--menu-articles {
+      width: 161px;
+      padding: 0;
+      order: 0;
+    }
 
-  .menu-social {
-    background-color: yellow;
-    order: 1;
-  }
+    &--menu-social {
+      width: 161px;
+      padding: 0;
+      order: 1;
+    }
 
-  .copy {
-    background-color: green;
-    order: -1;
+    &--copy {
+      width: 161px;
+      padding-right: 0px;
+      order: -1;
+    }
   }
 }

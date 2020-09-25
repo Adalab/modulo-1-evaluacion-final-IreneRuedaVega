@@ -68,13 +68,13 @@
   border-radius: 22.5px;
   background-color: $color-tertiary;
   display: inline-block;
-  transition: background-color ease 1s;
+  transition: background-color ease 0.5s;
 }
 
 .more-button:hover {
-  background-color: $color-secundary;
-  color: $color-light;
-  border: 2px solid $color-midtone;
+  background-color: $color-light;
+  color: $color-tertiary;
+  border: 2px solid $color-tertiary;
 }
 
 @media all and (min-width: 768px) {

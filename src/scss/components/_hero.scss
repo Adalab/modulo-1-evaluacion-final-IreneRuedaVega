@@ -16,11 +16,11 @@
     font-family: $font-title;
     text-align: center;
     &--principal {
-      text-transform: uppercase;
       font-size: 42px;
       line-height: 55px;
       .span {
         display: block;
+        text-transform: uppercase;
       }
     }
     &--paragraph {
